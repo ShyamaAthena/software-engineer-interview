@@ -1,9 +1,12 @@
-namespace Zip.InstallmentsService
+using Zip.InstallmentsService.Data;
+using Zip.InstallmentsService.Data.Models;
+
+namespace Zip.InstallmentsService.Core.Entities
 {
     /// <summary>
     /// This class is responsible for building the PaymentPlan according to the Zip product definition.
     /// </summary>
-    public class PaymentPlanFactory : IPaymentPlanFactory
+    public class PaymentPlanFactory 
     {
         /// <summary>
         /// Builds the PaymentPlan instance.
@@ -15,5 +18,5 @@ namespace Zip.InstallmentsService
             // TODO
             return new PaymentPlan();
         }
-    }
+	}
 }
